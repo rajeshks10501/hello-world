@@ -18,6 +18,17 @@ public class TestThread {
 		DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 
 		Date today = new Date();
+		String str1 = "Hello";
+		String str2 = "Hello1";
+
+		if(str1==str2)
+		{
+			System.out.println("str1 and str2 are the same object");
+		}
+		else
+		{
+			System.out.println("str1 and str2 are not the same object");
+		};
 
 		Date todayWithZeroTime = formatter.parse(formatter.format(today));	
 		System.out.println(todayWithZeroTime);
